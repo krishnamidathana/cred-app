@@ -151,6 +151,21 @@ td{
     th:last-child, td:last-child {
         margin-right: 0; /* Remove margin for the last column */
     }
-}
 
+    /* Adjustments for labels and inputs */
+    th, #names, #ages, #emails {
+        width: 100%;
+    }
+
+    th, #names, #ages, #emails, .edits, .deletes {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .nclass, .aclass, .eclass {
+        width: calc(50% - 5px);
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
 
