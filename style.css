@@ -137,12 +137,20 @@ td{
     }
 
     #names, #emails, #ages, .eclass, .aclass, .nclass {
-        width: calc(100% - 20px); /* Adjusted width */
-        margin: 5px 10px; /* Adjusted margin */
-        display: inline-block; /* Align to the side */
+        width: 100%;
+        margin: 5px 0;
+        display: block; /* Display in a single column */
+    }
+
+    th, td {
+        display: inline-block;
+        width: 45%; /* Adjust width based on your preference */
+        margin-right: 5%; /* Add some margin between columns */
+    }
+
+    th:last-child, td:last-child {
+        margin-right: 0; /* Remove margin for the last column */
     }
 }
-
-
 
 
