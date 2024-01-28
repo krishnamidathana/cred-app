@@ -119,56 +119,26 @@ td{
     margin-right: 30px;
     background-color: yellow;
 }
+/* Your Original Styles */
+
+/* ... (Your existing styles) ... */
+
+/* Additional Styles for Mobile View Alignment */
+
 @media only screen and (max-width: 600px) {
-    table {
-        width: 100%;
-        border-collapse: collapse; /* Ensure no space between table cells */
-    }
-
     th, td {
-        display: block;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 10px;
-        padding: 5px; /* Add padding for better spacing */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .edits, .deletes {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    #names, #emails, #ages, .eclass, .aclass, .nclass {
-        width: 100%;
-        margin: 5px 0;
-        display: block; /* Display in a single column */
-    }
-
-    th, td {
-        display: inline-block;
+    th {
         width: 45%; /* Adjust width based on your preference */
         margin-right: 5%; /* Add some margin between columns */
     }
 
-    th:last-child, td:last-child {
-        margin-right: 0; /* Remove margin for the last column */
-    }
-
-    /* Adjustments for labels and inputs */
-    th, #names, #ages, #emails {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
-    .nclass, .aclass, .eclass {
-        width: calc(50% - 5px);
-        display: inline-block;
-        margin-right: 5px;
-    }
-
-    /* Display table head and body side by side */
-    thead, tbody {
-        display: flex;
-        flex-direction: column;
+    td {
+        width: 45%; /* Adjust width based on your preference */
+        margin-right: 5%; /* Add some margin between columns */
     }
 }
