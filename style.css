@@ -128,6 +128,7 @@ td{
         width: 100%;
         display: block;
         text-align: left;
+        margin-bottom: 10px; /* Add margin for better spacing */
     }
 
     .edits, .deletes {
@@ -136,8 +137,9 @@ td{
     }
 
     #names, #emails, #ages, .eclass, .aclass, .nclass {
-        width: 100%;
-        margin: 5px 0;
+        width: calc(100% - 20px); /* Adjusted width */
+        margin: 5px 10px; /* Adjusted margin */
+        display: inline-block; /* Align to the side */
     }
 }
 
